@@ -1,0 +1,16 @@
+# zap-full-scan rule configuration file
+# This file contains the code for skipping the scan
+
+10015	IGNORE	(WARN-NEW: Re-examine Cache-control Directives)
+10049	IGNORE	(WARN-NEW: Storable and Cacheable Content)
+10055	IGNORE	(WARN-NEW: CSP: style-src unsafe-inline)
+10027	IGNORE	(WARN-NEW: Information Disclosure - Suspicious Comments)
+10035	IGNORE	(WARN-NEW: Strict-Transport-Security Header Not Set)
+10063	IGNORE	(WARN-NEW: Permissions Policy Header Not Set)
+10109	IGNORE	(WARN-NEW: Modern Web Application)
+10044	IGNORE	(WARN-NEW: Big Redirect Detected)
+10003	IGNORE	(WARN-NEW: Vulnerable JS Library)
+10019	IGNORE	(WARN-NEW: Content-Type Header Missing)
+90004	IGNORE	(WARN-NEW: Insufficient Site Isolation Against Spectre Vulnerability)
+10096	IGNORE	(WARN-NEW: Timestamp Disclosure - Unix)
+90003	IGNORE	(WARN-NEW: Sub Resource Integrity Attribute Missing)

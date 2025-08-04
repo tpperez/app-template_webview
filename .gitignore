@@ -1,0 +1,46 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+.vercel
+
+# environment variables
+.env
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# testing
+coverage/
+
+# logs
+*.log
+npm-debug.log*
+
+# cache
+.npm
+.eslintcache
+.turbo
+
+# os files
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+
+# node.js server files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# temporary
+tmp/
+temp/
