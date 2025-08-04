@@ -1,4 +1,4 @@
-import type { ICoreRequestOptions } from '../core'
+import type { ICoreRequestOptions } from '@/app/services/http/core'
 
 export interface IRestRequestOptions<TBody = unknown>
   extends ICoreRequestOptions {

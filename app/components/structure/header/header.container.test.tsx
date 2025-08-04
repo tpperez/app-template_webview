@@ -9,7 +9,7 @@ vi.mock('./queries', () => {
   }
 })
 
-import getHeaderData from '../header/queries'
+import getHeaderData from './queries'
 
 describe('HeaderContainer', () => {
   it('should render Header when data loads successfully', async () => {

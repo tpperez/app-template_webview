@@ -3,7 +3,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import {
   NativeInboundEvents,
   NativeOutboundEvents,
-} from '../events-name/events-name'
+} from '@/app/utils/native/bridge/events-name'
 
 import { webviewManagement } from './webview-bridge-client'
 

@@ -2,12 +2,12 @@ import type {
   IGraphQLHttpAdapter,
   IGraphQLRequestConfig,
   IGraphQLResponse,
-} from '../../core/core.type'
+} from '@/app/services/http/core'
 import {
   createHeaders,
   createTimeoutSignal,
   processResponse,
-} from '../../core/core.utils'
+} from '@/app/services/http/core'
 
 interface IGraphQLRequestPayload {
   query: string

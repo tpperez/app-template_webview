@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
 
-import isDev from '../is-dev/is-dev'
+import isDev from './is-dev'
 
 describe('utils/is-dev', () => {
   it('should return true when NODE_ENV is development', () => {

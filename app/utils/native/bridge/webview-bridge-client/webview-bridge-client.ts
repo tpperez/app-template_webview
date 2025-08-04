@@ -1,4 +1,7 @@
-import { NativeInboundEvents, NativeOutboundEvents } from '../events-name'
+import {
+  NativeInboundEvents,
+  NativeOutboundEvents,
+} from '@/app/utils/native/bridge/events-name'
 
 const closeWebView = () => {
   if (typeof window !== 'undefined') {

@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 
-import { WebViewBridge } from '../webview-bridge'
+import { WebViewBridge } from '@/app/utils/native/bridge/webview-bridge'
 
 export const NativeBridgeProvider = () => {
   useEffect(() => {

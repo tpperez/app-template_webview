@@ -3,7 +3,7 @@ import {
   HTTP_ADAPTER_CONFIG,
   type IRestHttpAdapter,
   resolveBaseUrl,
-} from '../core'
+} from '@/app/services/http/core'
 
 import type { IRestRequestOptions, TRestResponse } from './rest.type'
 

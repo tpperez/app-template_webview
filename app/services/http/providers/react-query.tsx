@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
-import { HTTP_CONFIG } from '../core'
+import { HTTP_CONFIG } from '@/app/services/http/core'
 
 interface HttpProviderProps {
   children: React.ReactNode

@@ -1,9 +1,10 @@
-import { IHttpRequestConfig, IRestHttpAdapter } from '../../core'
 import {
   createHeaders,
   createTimeoutSignal,
+  IHttpRequestConfig,
+  IRestHttpAdapter,
   processResponse,
-} from '../../core/core.utils'
+} from '@/app/services/http/core'
 
 export class FetchRestAdapter implements IRestHttpAdapter {
   readonly name = 'fetch-rest'

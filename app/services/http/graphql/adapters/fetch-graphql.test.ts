@@ -1,5 +1,10 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
+import {
+  createTimeoutSignal,
+  processResponse,
+} from '@/app/services/http/core/core.utils'
+
 import { FetchGraphQLAdapter } from './fetch-graphql'
 
 vi.mock('../../core/core.utils', () => {
@@ -28,8 +33,6 @@ vi.mock('../../core/core.utils', () => {
     }),
   }
 })
-
-import { createTimeoutSignal, processResponse } from '../../core/core.utils'
 
 const mockCreateTimeoutSignal = vi.mocked(createTimeoutSignal)
 const mockProcessResponse = vi.mocked(processResponse)

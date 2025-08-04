@@ -1,4 +1,4 @@
-import type { ICoreRequestOptions } from '../core'
+import type { ICoreRequestOptions } from '@/app/services/http/core'
 
 export interface IGraphQLRequestOptions<TVariables = Record<string, unknown>>
   extends Omit<ICoreRequestOptions, 'method'> {
@@ -12,4 +12,4 @@ export interface IGraphQLRequest<TVariables = Record<string, unknown>> {
   operationName?: string
 }
 
-export type { IGraphQLResponse } from '../core'
+export type { IGraphQLResponse } from '@/app/services/http/core'

@@ -4,11 +4,11 @@ import { useCallback, useEffect, useState } from 'react'
 
 import Cookies from 'js-cookie'
 
-import { webviewManagement } from '../../bridge/webview-bridge-client'
+import { webviewManagement } from '@/app/utils/native/bridge'
 import {
   getTokenExpiration,
   TOKEN_COOKIE_NAME,
-} from '../token-client/token.utils'
+} from '@/app/utils/native/token/token-client/token.utils'
 
 export const NativeTokenGate = ({
   children,

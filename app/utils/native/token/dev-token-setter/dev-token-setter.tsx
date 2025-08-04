@@ -7,7 +7,7 @@ import Cookies from 'js-cookie'
 import {
   getTokenExpiration,
   TOKEN_COOKIE_NAME,
-} from '../token-client/token.utils'
+} from '@/app/utils/native/token/token-client/token.utils'
 
 export const DevTokenSetter = () => {
   const [jwt, setJwt] = useState('')

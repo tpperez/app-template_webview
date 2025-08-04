@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import { vi } from 'vitest'
 
-import { NativeBridgeProvider } from './native-bridge-provider'
+import { NativeBridgeProvider } from '@/app/utils/native/bridge/native-bridge-provider'
 
 const mockInit = vi.fn()
 const mockWebViewBridgeInstance = { init: mockInit }

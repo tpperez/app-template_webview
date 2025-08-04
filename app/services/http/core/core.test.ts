@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
-import { FetchGraphQLAdapter } from '../graphql/adapters'
-import { FetchRestAdapter } from '../rest/adapters'
+import { FetchGraphQLAdapter } from '@/app/services/http/graphql/adapters'
+import { FetchRestAdapter } from '@/app/services/http/rest/adapters'
 
 import { HTTP_ADAPTER_CONFIG, HTTP_CONFIG } from './core'
 

@@ -2,8 +2,8 @@ import { act, render, screen, waitFor } from '@testing-library/react'
 import Cookies from 'js-cookie'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
-import { webviewManagement } from '../../bridge/webview-bridge-client'
-import { getTokenExpiration } from '../token-client/token.utils'
+import { webviewManagement } from '@/app/utils/native/bridge/'
+import { getTokenExpiration } from '@/app/utils/native/token/token-client/token.utils'
 
 import { NativeTokenGate } from './native-token-gate'
 

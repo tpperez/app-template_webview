@@ -4,7 +4,7 @@ import {
   HTTP_CONFIG,
   type IGraphQLHttpAdapter,
   resolveBaseUrl,
-} from '../core'
+} from '@/app/services/http/core'
 
 import type { IGraphQLRequestOptions, IGraphQLResponse } from './graphql.type'
 
