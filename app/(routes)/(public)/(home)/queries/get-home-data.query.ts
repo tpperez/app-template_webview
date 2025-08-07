@@ -1,4 +1,4 @@
-import { graphqlClient } from '@/app/services/http'
+import { graphqlClient } from '@/app/services/http/graphql'
 
 import { HOME_DATA_QUERY } from './get-home-data.const'
 import type { IHomeDataResponse } from './get-home-data.type'
