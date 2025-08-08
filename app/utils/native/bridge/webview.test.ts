@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
-import { WebViewBridge } from './webview-bridge'
+import { WebViewBridge } from './webview'
 
 interface MockWindow {
   nsWebViewInterface?: WebViewBridge

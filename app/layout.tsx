@@ -9,10 +9,9 @@ import ButtonCloseWebview from '@/app/components/ui/button-close-webview'
 import { LANGUAGE, SITE_NAME } from '@/app/constants/config'
 import { HttpProvider } from '@/app/services/http/providers'
 import ILayout from '@/app/types/layout'
-import { NativeBridgeProvider } from '@/app/utils/native/bridge/native-bridge-provider/native-bridge-provider'
-import { DevTokenSetter } from '@/app/utils/native/token/dev-token-setter/dev-token-setter'
+import { DevTokenSetter } from '@/app/utils/native/components'
+import NativeBridgeProvider from '@/app/utils/native/providers'
 
-// import { NativeTokenGate } from '@/app/utils/native/native-token-gate'
 import isDev from './utils/is-dev'
 
 import '@/app/styles/globals.css'

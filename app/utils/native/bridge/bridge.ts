@@ -1,7 +1,7 @@
 import {
   NativeInboundEvents,
   NativeOutboundEvents,
-} from '@/app/utils/native/bridge/events-name'
+} from '@/app/utils/native/events'
 
 const closeWebView = () => {
   if (typeof window !== 'undefined') {

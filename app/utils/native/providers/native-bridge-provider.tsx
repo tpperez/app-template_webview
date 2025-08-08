@@ -2,9 +2,9 @@
 
 import { useEffect } from 'react'
 
-import { WebViewBridge } from '@/app/utils/native/bridge/webview-bridge'
+import { WebViewBridge } from '@/app/utils/native/bridge'
 
-export const NativeBridgeProvider = () => {
+const NativeBridgeProvider = () => {
   useEffect(() => {
     if (typeof window !== 'undefined' && !window.nsWebViewInterface) {
       const bridge = new WebViewBridge()
@@ -14,3 +14,5 @@ export const NativeBridgeProvider = () => {
 
   return null
 }
+
+export default NativeBridgeProvider

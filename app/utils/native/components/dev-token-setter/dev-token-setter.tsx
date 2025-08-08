@@ -4,12 +4,9 @@ import { useEffect, useState } from 'react'
 
 import Cookies from 'js-cookie'
 
-import {
-  getTokenExpiration,
-  TOKEN_COOKIE_NAME,
-} from '@/app/utils/native/token/token-client/token.utils'
+import { getTokenExpiration, TOKEN_COOKIE_NAME } from '@/app/utils/native/token'
 
-export const DevTokenSetter = () => {
+const DevTokenSetter = () => {
   const [jwt, setJwt] = useState('')
   const [error, setError] = useState('')
   const [success, setSuccess] = useState(false)
@@ -105,3 +102,5 @@ export const DevTokenSetter = () => {
     </div>
   )
 }
+
+export default DevTokenSetter

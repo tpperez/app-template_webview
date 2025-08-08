@@ -2,10 +2,10 @@ import { act, render, screen, waitFor } from '@testing-library/react'
 import Cookies from 'js-cookie'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
-import { webviewManagement } from '@/app/utils/native/bridge/'
-import { getTokenExpiration } from '@/app/utils/native/token/token-client/token.utils'
+import { webviewManagement } from '@/app/utils/native/bridge'
+import { getTokenExpiration } from '@/app/utils/native/token'
 
-import { NativeTokenGate } from './native-token-gate'
+import NativeTokenGate from './native-token-gate'
 
 vi.mock('js-cookie', () => {
   return {
@@ -16,7 +16,7 @@ vi.mock('js-cookie', () => {
   }
 })
 
-vi.mock('../../bridge/webview-bridge-client', () => {
+vi.mock('@/app/utils/native/bridge', () => {
   return {
     webviewManagement: {
       subscribeToJWTMessage: vi.fn(),
@@ -26,9 +26,14 @@ vi.mock('../../bridge/webview-bridge-client', () => {
   }
 })
 
-vi.mock('../token-client/token.utils', () => {
+vi.mock('@/app/utils/native/token/token.utils', () => {
   return {
     getTokenExpiration: vi.fn(),
+  }
+})
+
+vi.mock('@/app/utils/native/token/token.const', () => {
+  return {
     TOKEN_COOKIE_NAME: '',
   }
 })

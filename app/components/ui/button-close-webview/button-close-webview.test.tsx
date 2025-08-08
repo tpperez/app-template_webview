@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from 'vitest'
 
 import ButtonCloseWebview from './button-close-webview'
 
-vi.mock('@/app/utils/native/bridge/webview-bridge-client', () => {
+vi.mock('@/app/utils/native/bridge', () => {
   return {
     webviewManagement: {
       closeWebView: vi.fn(),
@@ -20,9 +20,7 @@ describe('ButtonCloseWebview', () => {
   })
 
   it('should call webview close', async () => {
-    const { webviewManagement } = await import(
-      '@/app/utils/native/bridge/webview-bridge-client'
-    )
+    const { webviewManagement } = await import('@/app/utils/native/bridge')
 
     render(<ButtonCloseWebview />)
 

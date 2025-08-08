@@ -2,9 +2,9 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import Cookies from 'js-cookie'
 import { beforeEach, describe, expect, it, type Mock, vi } from 'vitest'
 
-import { TOKEN_COOKIE_NAME } from '@/app/utils/native/token/token-client/token.utils'
+import { TOKEN_COOKIE_NAME } from '@/app/utils/native/token'
 
-import { DevTokenSetter } from './dev-token-setter'
+import DevTokenSetter from './dev-token-setter'
 
 vi.mock('js-cookie', () => {
   return {
