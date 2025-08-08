@@ -1,6 +1,6 @@
 'use client'
 
-import { webviewManagement } from '@/app/utils/native/bridge/webview-bridge-client'
+import { webviewManagement } from '@/app/utils/native/bridge'
 
 const handleCloseWebView = () => {
   return webviewManagement.closeWebView()

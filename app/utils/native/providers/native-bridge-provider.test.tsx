@@ -1,12 +1,12 @@
 import { render } from '@testing-library/react'
-import { vi } from 'vitest'
+import { afterEach, vi } from 'vitest'
 
-import { NativeBridgeProvider } from '@/app/utils/native/bridge/native-bridge-provider'
+import NativeBridgeProvider from './native-bridge-provider'
 
 const mockInit = vi.fn()
 const mockWebViewBridgeInstance = { init: mockInit }
 
-vi.mock('../webview-bridge', () => {
+vi.mock('../bridge/webview', () => {
   return {
     WebViewBridge: vi.fn(() => {
       return mockWebViewBridgeInstance

@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie'
 import { type Mock, vi } from 'vitest'
 
-import { getToken } from './get-token'
+import { getToken } from './token'
 
 vi.mock('js-cookie', () => {
   return {

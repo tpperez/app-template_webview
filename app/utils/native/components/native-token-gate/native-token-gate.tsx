@@ -5,16 +5,9 @@ import { useCallback, useEffect, useState } from 'react'
 import Cookies from 'js-cookie'
 
 import { webviewManagement } from '@/app/utils/native/bridge'
-import {
-  getTokenExpiration,
-  TOKEN_COOKIE_NAME,
-} from '@/app/utils/native/token/token-client/token.utils'
+import { getTokenExpiration, TOKEN_COOKIE_NAME } from '@/app/utils/native/token'
 
-export const NativeTokenGate = ({
-  children,
-}: {
-  children: React.ReactNode
-}) => {
+const NativeTokenGate = ({ children }: { children: React.ReactNode }) => {
   const [hasToken, setHasToken] = useState(false)
 
   const checkIfTokenExists = (): boolean => {
@@ -63,3 +56,5 @@ export const NativeTokenGate = ({
 
   return <>{children}</>
 }
+
+export default NativeTokenGate

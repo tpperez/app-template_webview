@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from 'vitest'
 
 import getHeaderData from './get-header-data.query'
 
-vi.mock('@/app/services/http', () => {
+vi.mock('@/app/services/http/graphql', () => {
   return {
     graphqlClient: {
       query: vi.fn(),
@@ -12,7 +12,7 @@ vi.mock('@/app/services/http', () => {
 
 vi.spyOn(console, 'error').mockImplementation(() => {})
 
-import { graphqlClient } from '@/app/services/http'
+import { graphqlClient } from '@/app/services/http/graphql'
 
 describe('getHeaderData', () => {
   it('should return success when query succeeds', async () => {

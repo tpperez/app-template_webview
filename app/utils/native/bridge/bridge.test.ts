@@ -3,9 +3,9 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import {
   NativeInboundEvents,
   NativeOutboundEvents,
-} from '@/app/utils/native/bridge/events-name'
+} from '@/app/utils/native/events'
 
-import { webviewManagement } from './webview-bridge-client'
+import { webviewManagement } from './bridge'
 
 describe('webviewManagement', () => {
   const mockEmit = vi.fn()
