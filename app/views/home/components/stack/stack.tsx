@@ -31,7 +31,7 @@ const Stack = ({ data }: IStackData) => {
                   <span className='text-4xl transition-all duration-500 group-hover:scale-150 group-hover:opacity-100'>
                     <Image
                       src={item.image.url}
-                      alt={item.image.alt ? item.image.alt : 'Stack Image'}
+                      alt={item.image.alt ? item.image.alt : 'image'}
                       height={item.image.height}
                       width={item.image.width}
                       className='h-12 w-12 object-cover'

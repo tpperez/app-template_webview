@@ -31,7 +31,7 @@ const Benefits = ({ data }: IBenefitsData) => {
                   <div className='flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-gray-900 to-gray-700 text-2xl grayscale'>
                     <Image
                       src={item.image.url}
-                      alt={item.image.alt ? item.image.alt : 'Stack Image'}
+                      alt={item.image.alt ? item.image.alt : 'image'}
                       height={item.image.height}
                       width={item.image.width}
                       className='h-6 w-6 object-cover'

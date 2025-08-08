@@ -9,12 +9,13 @@ import ButtonCloseWebview from '@/app/components/ui/button-close-webview'
 import { LANGUAGE, SITE_NAME } from '@/app/constants/config'
 import { HttpProvider } from '@/app/services/http/providers'
 import ILayout from '@/app/types/layout'
-import { DevTokenSetter } from '@/app/utils/native/components'
 import NativeBridgeProvider from '@/app/utils/native/providers'
 
-import isDev from './utils/is-dev'
-
 import '@/app/styles/globals.css'
+
+// import isDev from '@/app/utils/is-dev'
+// import { NativeTokenGate } from '@/app/utils/native/token'
+// import { DevTokenSetter } from '@/app/utils/native/token/dev-token-setter/dev-token-setter'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -49,18 +50,18 @@ const LayoutRoot = async ({ children }: ILayout) => {
         className={`${roboto.variable} font-roboto antialiased`}
         suppressHydrationWarning={true}
       >
+        <NativeBridgeProvider />
+        {/* <NativeTokenGate> */}
         <HttpProvider>
           <HeaderContainer />
-          <NativeBridgeProvider />
-          {isDev() && <DevTokenSetter />}
-          {/* <NativeTokenGate>{children}</NativeTokenGate> */}
-          <ButtonCloseWebview />
-
           <main className='min-h-screen bg-gradient-to-br from-gray-50 to-gray-100'>
             {children}
           </main>
           <FooterContainer />
+          <ButtonCloseWebview />
         </HttpProvider>
+        {/* </NativeTokenGate> */}
+        {/* {isDev() && <DevTokenSetter />} */}
       </body>
     </html>
   )
