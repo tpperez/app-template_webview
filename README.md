@@ -1,45 +1,28 @@
-# App Template - Webview
+# App Webview Web
 
-Next.js application template with TypeScript, Tailwind CSS, and quality tools pre-configured for rapid development.
+This project is a web application that integrates native-to-webview communication.
 
----
-
-## Table of Contents
-
-- [Technology Stack](#technology-stack)
-- [Available Scripts](#available-scripts)
-- [Quick Start](#quick-start)
-- [Documentation](#documentation)
-- [What's Included](#whats-included)
-- [Contributing](#contributing)
+It was bootstrapped from [`https://github.com/tpperez/app-template`](https://github.com/tpperez/app-template), and follows the same architecture principles for scalability, reusability, and native integration.
 
 ---
 
-## Technology Stack
+## Quick Start
 
-### Core Framework ✅
+### Prerequisites
 
-- **Next.js 15** - app router configured → [Documentation](https://nextjs.org/docs)
-- **TypeScript** - strict mode enabled → [Handbook](https://www.typescriptlang.org/docs/)
-- **Tailwind CSS** - design system ready → [Documentation](https://tailwindcss.com/docs)
+- [Node.js](https://nodejs.org/) via [nvm](https://github.com/nvm-sh/nvm) (version in .nvmrc)
 
-### HTTP & State 🚀
+### Setup
 
-- **TanStack Query** - provider configured → [React Guide](https://tanstack.com/query/latest)
-- **Zustand** - store structure ready → [Getting Started](https://zustand-demo.pmnd.rs/)
+```bash
+# install dependencies and setup
+nvm install && nvm use
+npm install
 
-### Forms & Validation 🚀
-
-- **React Hook Form** - dependencies installed → [Quick Start](https://react-hook-form.com/get-started)
-- **Zod** - validation schemas ready → [Documentation](https://zod.dev/)
-
-### Quality Tools ✅
-
-- **Vitest** - test environment configured → [Guide](https://vitest.dev/guide/)
-- **Testing Library** - component testing ready → [Documentation](https://testing-library.com/docs/)
-- **ESLint + Prettier** - code quality automated → [ESLint](https://eslint.org/docs/latest/) | [Prettier](https://prettier.io/docs/en/)
-
-**Legend:** ✅ Implemented & Configured | 🚀 Installed & Ready to Use
+# start development
+npm run dev
+open http://localhost:3000
+```
 
 ---
 
@@ -64,61 +47,6 @@ npm run format       # check code formatting
 
 ---
 
-## Quick Start
+## Linked Projects
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) via [nvm](https://github.com/nvm-sh/nvm) (version in .nvmrc)
-
-### Setup
-
-```bash
-# install dependencies and setup
-nvm install && nvm use
-npm install
-
-# start development
-npm run dev
-open http://localhost:3000
-```
-
----
-
-## Documentation
-
-### Getting Started
-
-- **[Setup Guide](docs/getting-started.md)** - installation and first steps
-
-### Development
-
-- **[Architecture](docs/architecture.md)** - project structure and patterns
-- **[HTTP Service](docs/service-http.md)** - complete HTTP service layer with REST, GraphQL, and performance optimization
-- **[Development](docs/development.md)** - development workflow, quality tools, and testing
-
-### Reference
-
-- **[Browser Support](docs/browser-support.md)** - compatibility requirements
-
----
-
-## What's Included
-
-### Working Features ✅
-
-- **HTTP Service Layer** - rest and graphql clients with adapter pattern
-- **Testing Infrastructure** - vitest with react testing library and coverage thresholds
-- **Code Quality Automation** - eslint, prettier, and pre-commit hooks
-- **Development Environment** - typescript strict mode, tailwind css, hot reload
-
-### Ready to Implement 🚀
-
-- **State Management** - zustand for client state, tanstack query for server state
-- **Form Handling** - react hook form with zod validation
-- **Custom Hooks** - structure prepared for business logic extraction
-
----
-
-## Contributing
-
-Read our [development guide](docs/development.md) for setup and testing requirements.
+- [`https://github.com/tpperez/app-template`](https://github.com/tpperez/app-template): Base template used to scaffold this app
